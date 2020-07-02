@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ANSITerminal",
+        "repositoryURL": "https://github.com/pakLebah/ANSITerminal.git",
+        "state": {
+          "branch": null,
+          "revision": "8e24fab68c660eca1244a95019ec69a11400d62b",
+          "version": "0.0.3"
+        }
+      },
+      {
+        "package": "Files",
+        "repositoryURL": "https://github.com/johnsundell/files",
+        "state": {
+          "branch": null,
+          "revision": "22fe84797d499ffca911ccd896b34efaf06a50b9",
+          "version": "4.1.1"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "eb51f949cdd0c9d88abba9ce79d37eb7ea1231d0",
+          "version": "0.2.0"
+        }
+      },
+      {
+        "package": "SwiftFigletKit",
+        "repositoryURL": "https://github.com/dfreniche/SwiftFiglet",
+        "state": {
+          "branch": null,
+          "revision": "1ac347c06611750ca8ef2a599cc5c25f9af75f1b",
+          "version": "0.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

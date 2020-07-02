@@ -3,11 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9916E9F324A6704000606972 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9916E9F224A6704000606972 /* main.swift */; };
+		9916E9F324A6704000606972 /* MainChiquitoSay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9916E9F224A6704000606972 /* MainChiquitoSay.swift */; };
+		9916E9FB24A6716400606972 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 9916E9FA24A6716400606972 /* ArgumentParser */; };
+		9916EA0024A7B92F00606972 /* ANSITerminal in Frameworks */ = {isa = PBXBuildFile; productRef = 9916E9FF24A7B92F00606972 /* ANSITerminal */; };
+		9916EA0224A88A0A00606972 /* String+Optionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9916EA0124A88A0A00606972 /* String+Optionals.swift */; };
+		9916EA0624A88B0900606972 /* Process+RunCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9916EA0524A88B0900606972 /* Process+RunCommand.swift */; };
+		9916EA0824A88B5500606972 /* ChiquitoSay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9916EA0724A88B5500606972 /* ChiquitoSay.swift */; };
+		9916EA0B24A88DD900606972 /* SwiftFigletKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9916EA0A24A88DD900606972 /* SwiftFigletKit */; };
+		9916EA0D24A88DF500606972 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9916EA0C24A88DF500606972 /* Banner.swift */; };
+		9916EA1224A892D800606972 /* Files in Frameworks */ = {isa = PBXBuildFile; productRef = 9916EA1124A892D800606972 /* Files */; };
+		9981912E24A8FC650061928A /* UIImage+PrintText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9981912D24A8FC650061928A /* UIImage+PrintText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +33,14 @@
 
 /* Begin PBXFileReference section */
 		9916E9EF24A6704000606972 /* ChiquitoSay */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChiquitoSay; sourceTree = BUILT_PRODUCTS_DIR; };
-		9916E9F224A6704000606972 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9916E9F224A6704000606972 /* MainChiquitoSay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainChiquitoSay.swift; sourceTree = "<group>"; };
+		9916EA0124A88A0A00606972 /* String+Optionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Optionals.swift"; sourceTree = "<group>"; };
+		9916EA0524A88B0900606972 /* Process+RunCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Process+RunCommand.swift"; sourceTree = "<group>"; };
+		9916EA0724A88B5500606972 /* ChiquitoSay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiquitoSay.swift; sourceTree = "<group>"; };
+		9916EA0C24A88DF500606972 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		9916EA0F24A88FBD00606972 /* banner.flf */ = {isa = PBXFileReference; lastKnownFileType = text; path = banner.flf; sourceTree = "<group>"; };
+		9981912D24A8FC650061928A /* UIImage+PrintText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+PrintText.swift"; sourceTree = "<group>"; };
+		99A5F9EE24AB5FB000C577BE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +48,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9916EA1224A892D800606972 /* Files in Frameworks */,
+				9916E9FB24A6716400606972 /* ArgumentParser in Frameworks */,
+				9916EA0B24A88DD900606972 /* SwiftFigletKit in Frameworks */,
+				9916EA0024A7B92F00606972 /* ANSITerminal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +61,7 @@
 		9916E9E624A6704000606972 = {
 			isa = PBXGroup;
 			children = (
+				99A5F9EE24AB5FB000C577BE /* README.md */,
 				9916E9F124A6704000606972 /* ChiquitoSay */,
 				9916E9F024A6704000606972 /* Products */,
 			);
@@ -57,9 +78,23 @@
 		9916E9F124A6704000606972 /* ChiquitoSay */ = {
 			isa = PBXGroup;
 			children = (
-				9916E9F224A6704000606972 /* main.swift */,
+				9916E9F224A6704000606972 /* MainChiquitoSay.swift */,
+				9916EA0724A88B5500606972 /* ChiquitoSay.swift */,
+				9981912D24A8FC650061928A /* UIImage+PrintText.swift */,
+				9916EA0124A88A0A00606972 /* String+Optionals.swift */,
+				9916EA0524A88B0900606972 /* Process+RunCommand.swift */,
+				9916EA0C24A88DF500606972 /* Banner.swift */,
+				9916EA0E24A88F9C00606972 /* fonts */,
 			);
 			path = ChiquitoSay;
+			sourceTree = "<group>";
+		};
+		9916EA0E24A88F9C00606972 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9916EA0F24A88FBD00606972 /* banner.flf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +113,12 @@
 			dependencies = (
 			);
 			name = ChiquitoSay;
+			packageProductDependencies = (
+				9916E9FA24A6716400606972 /* ArgumentParser */,
+				9916E9FF24A7B92F00606972 /* ANSITerminal */,
+				9916EA0A24A88DD900606972 /* SwiftFigletKit */,
+				9916EA1124A892D800606972 /* Files */,
+			);
 			productName = ChiquitoSay;
 			productReference = 9916E9EF24A6704000606972 /* ChiquitoSay */;
 			productType = "com.apple.product-type.tool";
@@ -105,6 +146,12 @@
 				Base,
 			);
 			mainGroup = 9916E9E624A6704000606972;
+			packageReferences = (
+				9916E9F924A6716400606972 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				9916E9FE24A7B92F00606972 /* XCRemoteSwiftPackageReference "ANSITerminal" */,
+				9916EA0924A88DD900606972 /* XCRemoteSwiftPackageReference "SwiftFiglet" */,
+				9916EA1024A892D800606972 /* XCRemoteSwiftPackageReference "files" */,
+			);
 			productRefGroup = 9916E9F024A6704000606972 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -119,7 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9916E9F324A6704000606972 /* main.swift in Sources */,
+				9981912E24A8FC650061928A /* UIImage+PrintText.swift in Sources */,
+				9916EA0224A88A0A00606972 /* String+Optionals.swift in Sources */,
+				9916EA0624A88B0900606972 /* Process+RunCommand.swift in Sources */,
+				9916EA0824A88B5500606972 /* ChiquitoSay.swift in Sources */,
+				9916E9F324A6704000606972 /* MainChiquitoSay.swift in Sources */,
+				9916EA0D24A88DF500606972 /* Banner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +337,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9916E9F924A6716400606972 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		9916E9FE24A7B92F00606972 /* XCRemoteSwiftPackageReference "ANSITerminal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pakLebah/ANSITerminal.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+		9916EA0924A88DD900606972 /* XCRemoteSwiftPackageReference "SwiftFiglet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dfreniche/SwiftFiglet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+		9916EA1024A892D800606972 /* XCRemoteSwiftPackageReference "files" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnsundell/files";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9916E9FA24A6716400606972 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9916E9F924A6716400606972 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		9916E9FF24A7B92F00606972 /* ANSITerminal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9916E9FE24A7B92F00606972 /* XCRemoteSwiftPackageReference "ANSITerminal" */;
+			productName = ANSITerminal;
+		};
+		9916EA0A24A88DD900606972 /* SwiftFigletKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9916EA0924A88DD900606972 /* XCRemoteSwiftPackageReference "SwiftFiglet" */;
+			productName = SwiftFigletKit;
+		};
+		9916EA1124A892D800606972 /* Files */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9916EA1024A892D800606972 /* XCRemoteSwiftPackageReference "files" */;
+			productName = Files;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9916E9E724A6704000606972 /* Project object */;
 }
