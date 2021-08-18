@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/johnsundell/files",
         "state": {
           "branch": null,
-          "revision": "22fe84797d499ffca911ccd896b34efaf06a50b9",
-          "version": "4.1.1"
+          "revision": "d273b5b7025d386feef79ef6bad7de762e106eaf",
+          "version": "4.2.0"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/apple/swift-argument-parser",
         "state": {
           "branch": null,
-          "revision": "eb51f949cdd0c9d88abba9ce79d37eb7ea1231d0",
-          "version": "0.2.0"
+          "revision": "83b23d940471b313427da226196661856f6ba3e0",
+          "version": "0.4.4"
         }
       },
       {

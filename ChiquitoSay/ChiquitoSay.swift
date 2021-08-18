@@ -11,9 +11,11 @@ struct ChiquitoSay {
         print("Downloading \( imageURL ) ...".blue)
         var end = false
 
-        let sema = DispatchSemaphore( value: 0)
+        let sema = DispatchSemaphore( value: 1) // just one concurrent operation at a time
         
         let task = URLSession.shared.dataTask(with: imageURL) { (data, response, error) in
+            sema.wait() // decrement semaphore, no more operations at the time
+
             do {
                 if let data = data, let originalImage = NSImage(data: data) {
                     let imageWithText = originalImage.print(text: message)
@@ -26,17 +28,25 @@ struct ChiquitoSay {
                 print("Error creating file")
             }
             
-            sema.signal() // signals the process to continue
-                
+            sema.signal() // increment, done with this semaphore
             end = true
         };
 
-        task.resume()
+        task.resume() // launch task
         
+        // show ASCII animation while downloading
+        let animation = ["|", "/", "-", "\\"]
+        var animationIndex = 0
         while (!end) {
-            sema.wait()
-            print("...", separator: "", terminator: "")
-            sema.signal()
+            print("\(animation[animationIndex])\r", separator: "", terminator: "")
+
+            if animationIndex < animation.count - 1 {
+                animationIndex = animationIndex + 1
+            } else {
+                animationIndex = 0
+            }
         }
+        
+        print("\r  ")
     }
 }
