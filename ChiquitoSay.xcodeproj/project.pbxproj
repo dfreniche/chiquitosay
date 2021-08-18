@@ -17,17 +17,19 @@
 		9916EA0D24A88DF500606972 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9916EA0C24A88DF500606972 /* Banner.swift */; };
 		9916EA1224A892D800606972 /* Files in Frameworks */ = {isa = PBXBuildFile; productRef = 9916EA1124A892D800606972 /* Files */; };
 		9981912E24A8FC650061928A /* UIImage+PrintText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9981912D24A8FC650061928A /* UIImage+PrintText.swift */; };
+		99A5CAEA26CD298F0054B309 /* ChiquitoSay in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9916E9EF24A6704000606972 /* ChiquitoSay */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9916E9ED24A6704000606972 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 12;
+			dstPath = /Users/dfreniche/scripts;
 			dstSubfolderSpec = 0;
 			files = (
+				99A5CAEA26CD298F0054B309 /* ChiquitoSay in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
